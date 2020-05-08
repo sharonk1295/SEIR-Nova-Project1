@@ -17,22 +17,28 @@ $(() => {
     //     console.log('works');
     //     event.preventDefault();
     // })
+    
+    var number = parseInt($('h1').text());
 
     $add.on('click', () => {
         console.log('working');
         // parseInt($('h1').val()) + inputValue // doesn't change the 0
         // parseInt($('h1').text(parseInt($('h1').val()) + inputValue)) // returns NaN
         var a = parseInt($('input').val());
-        return $('h1').text(parseInt($('h1').val() + a)); // only increments by the input value ONCE
+        // return $('h1').text(parseInt($('h1').val() + a)); // only increments by the input value ONCE
+        
         // var b = parseInt($('h1').text(parseInt($('h1').val())));
         // return b += a 
+
+        return $('h1').text(number += a) // INCREMENTS BY GIVEN INPUT
     })
 
     $subtract.on('click', () => {
         console.log('this works too');
         var x = parseInt($('input').val());
         // return newNumber -= x;
-        return $('h1').text(parseInt($('h1').val() - x)); // only decrements by the input ONCE
-    })
+        // return $('h1').text(parseInt($('h1').val() - x)); // only decrements by the input ONCE
 
+        return $('h1').text(number -= x)
+    })
 })
