@@ -39,6 +39,12 @@ $(() => {
         // return newNumber -= x;
         // return $('h1').text(parseInt($('h1').val() - x)); // only decrements by the input ONCE
 
+        // if ($('h1').text(number -= x) % 2 !== 0) {
+        //     return ($('h1').text(number -= x)).css('color', 'red')
+        // } else {
+        //     return $('h1').text(number -= x).css('color', 'black')
+        // } // tried making negative numbers red
+
         return $('h1').text(number -= x)
     })
 })
