@@ -5,11 +5,11 @@
 $(() => {
 
     // ===== VARIABLES ======
-    const $add = $('#add');
+    const $add = $('#add'); // will use for add button
     const $subtract = $('#subtract');
-    const $input = $('#count').val();
-    const $inputValue = parseInt($input);
-    let $newNumber = parseInt($('h1').text());
+    const input = $('#count').val();
+    const inputValue = parseInt(input); // take the value of the input and make it an integer
+    let newNumber = parseInt($('h1').text()); // to treat the 0 as an integer, not a string
 
 
     // ===== FUNCTIONS/ EVENT HANDLERS ======
@@ -20,12 +20,19 @@ $(() => {
 
     $add.on('click', () => {
         console.log('working');
-        $newNumber += $inputValue
+        // parseInt($('h1').val()) + inputValue // doesn't change the 0
+        // parseInt($('h1').text(parseInt($('h1').val()) + inputValue)) // returns NaN
+        var a = parseInt($('input').val());
+        return $('h1').text(parseInt($('h1').val() + a)); // only increments by the input value ONCE
+        // var b = parseInt($('h1').text(parseInt($('h1').val())));
+        // return b += a 
     })
 
     $subtract.on('click', () => {
         console.log('this works too');
-        $newNumber -= $inputValue
+        var x = parseInt($('input').val());
+        // return newNumber -= x;
+        return $('h1').text(parseInt($('h1').val() - x)); // only decrements by the input ONCE
     })
 
 })
