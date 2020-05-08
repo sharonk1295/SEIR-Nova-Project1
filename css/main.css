@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+.container>h1 {
+    font-size: 70px;
+    /* background-color: blueviolet; */
+}
+.math-btn {
+    padding: 10px 13px;
+    background-color: cadetblue;
+    outline: none;
+    font-size: 16px;
+}
+.math-btn:hover {
+    background-color: darkgray;
+}
+#count {
+    padding: 10px 16px;
+    margin: auto 3px;
+}

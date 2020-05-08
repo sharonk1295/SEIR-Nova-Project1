@@ -1,2 +1,2 @@
-# SEIR-Nova-Project1
-GA SEIR-Nova Unit 1 Odd One Out Trivia Game
+# SEIR-Nova-Unit-1-Assessment
+GA SEIR-Nova Unit 1 Assessment on HTML, CSS, and Javascript
